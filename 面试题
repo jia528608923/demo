@@ -1,4 +1,4 @@
-#### 回答面试题格式
+ 回答面试题格式
 
 	1.我对这个题是这么理解的
 	2.根据自己的逻辑 ，阐述当前面试题的内容
@@ -14,7 +14,7 @@
 
 
 
-#### 1.解释vuex原理
+ 1.解释vuex原理
 	
 	State、 Getters、Mutations 、Actions、 Modules
 	vuex作为vue官方出品的状态管理框架，以及其简单API设计、便捷的开发工具
@@ -57,7 +57,7 @@
 
 
 
-#### 2.webpack打包原理
+ 2.webpack打包原理
 
 
 	webpack是一个现代Javascript应用的打包工具。它采用tool+plugins的结构。tool提供基础能力，即文件依赖管理和资源加载管理；在此基础上通过一系列的plugins来丰富打包工具的功能。
@@ -81,7 +81,7 @@
 	然后分析普通的bundle文件
 
 
-#### 3.JS中的作用域和作用域链是什么？
+ 3.JS中的作用域和作用域链是什么？
 	作用域：
 	每个JavaScript函数都是一个特殊的对象，对象中有的属性我们可以访问，但有的不可以，这些属性仅供JavaScript引擎存取，
 [[scope]]就是其中一个，[[scope]]就指的是作用域，其中存储了运行期上下文的集合。
@@ -107,7 +107,7 @@
 
 
 
-#### 4.Vue的生命周期
+ 4.Vue的生命周期
 beforeCreate（创建前） 在数据观测和初始化事件还未开始
 
 created（创建后） 完成数据观测，属性和方法的运算，初始化事件，$el属性还没有显示出来
@@ -129,8 +129,7 @@ beforeDestroy（销毁前） 在实例销毁之前调用。实例仍然完全可
 destroyed（销毁后） 在实例销毁之后调用。调用后，所有的事件监听器会被移除，所有的子实例也会被销毁。该钩子在服务器端渲染期间
 不被调用。
 
-
-#### 5.computed、watch、methods的区别
+ 5.computed、watch、methods的区别
 computed计算属性是用来声明式的描述一个值依赖了其它的值。当你在模板里把数据绑定到一个计算属性上时，Vue 会在其依赖
 的任何值导致该计算属性改变时更新 DOM。这个功能非常强大，它可以让你的代码更加声明式、数据驱动并且易于维护。
 
@@ -141,7 +140,7 @@ watch监听的是你定义的变量,当你定义的变量的值发生变化时�
 methods方法，函数，绑定事件调用；不会使用缓存
 
 
-#### 6.Vue的路由实现：hash模式 和 history模式
+ 6.Vue的路由实现：hash模式 和 history模式
 hash模式：在浏览器中符号“#”，#以及#后面的字符称之为hash，用window.location.hash读取；
 特点：hash虽然在URL中，但不被包括在HTTP请求中；用来指导浏览器动作，对服务端安全无用，hash不会重加载页面。
 hash 模式下，仅 hash 符号之前的内容会被包含在请求中，如?http://www.xxx.com，因此对于后端来说，即使没有做到对路由的全覆盖，
@@ -154,7 +153,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 一个覆盖所有情况的候选资源：如果 URL 匹配不到任何静态资源，则应该返回同一个 index.html 页面，这个页面就是你 app 依赖的页面。”
 
 
-#### 7.位运算符
+ 7.位运算符
     &	AND	如果两位都是 1 则设置每位为 1
     |	OR	如果两位之一为 1 则设置每位为 1
     ^	XOR	如果两位只有一位为 1 则设置每位为 1
@@ -169,7 +168,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
     
     执行按位操作后，结果将转换回 64 位 JavaScript 数
 
-#### 8.什么是 React
+ 8.什么是 React
     React是一个简单的javascript UI库，用于构建高效、快速的用户界面。
     它是一个轻量级库，因此很受欢迎。它遵循组件设计模式、
     声明式编程范式和函数式编程概念，以使前端应用程序更高效。
@@ -177,7 +176,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
     它遵循从高阶组件到低阶组件的单向数据流。
     
     
-#### 9.React 与 Angular 有何不同？
+ 9.React 与 Angular 有何不同？
     Angular是一个成熟的MVC框架，带有很多特定的特性，
     比如服务、指令、模板、模块、解析器等等。
     React是一个非常轻量级的库，它只关注MVC的视图部分。
@@ -186,7 +185,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
     例如，调用API的方式、路由等等。
     我们不需要包括路由器库，除非我们需要它在我们的项目。
     
-#### 10.组件生命周期方法
+ 10.组件生命周期方法
     componentWillMount()
     在渲染前调用,在客户端也在服务端，它只发生一次。
     
@@ -215,52 +214,52 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
     componentDidCatch()
     这个生命周期方法在ErrorBoundary类中使用。实际上，如果使用这个生命周期方法，任何类都会变成ErrorBoundary。这用于在组件树中出现错误时记录错误。
     
-#### 11.什么是Redux及其工作原理
+ 11.什么是Redux及其工作原理
     Redux 是 React的一个状态管理库，它基于flux。 Redux简化了React中的单向数据流。 Redux将状态管理完全从React中抽象出来。
     
-##### ①.它是如何工作的？
+	 ①.它是如何工作的？
     
     在React中，组件连接到 redux ，如果要访问 redux，需要派出一个包含 id和负载(payload) 的 action。action 中的 payload 是可选的，action 将其转发给 Reducer。
     当reducer收到action时，通过 swithc...case 语法比较 action 中type。 匹配时，更新对应的内容返回新的 state。
     当Redux状态更改时，连接到Redux的组件将接收新的状态作为props。当组件接收到这些props时，它将进入更新阶段并重新渲染 UI。
     
-##### ②.Redux 循环细节
+ 	②.Redux 循环细节
     Action: Action 只是一个简单的json对象，type 和有payload作为键。type 是必须要有的，payload是可选的。
     
     Action Creators：这些是创建Actions的函数，因此我们在派发action时不必在组件中手动编写每个 action
     
     Reducers：Reducers 是纯函数，它将 action和当前 state 作为参数,计算必要的逻辑并返回一个新的state。 这些 Reducers 没有任何副作用。 它不会改变 state 而是总是返回 state 。
     
-#### 12.组件如何与 redux 进行连接
+ 12.组件如何与 redux 进行连接
     mapStateToProps：此函数将state映射到 props 上，因此只要state发生变化，新 state 会重新映射到 props。 这是订阅store的方式。
     mapDispatchToProps：此函数用于将 action creators 绑定到你的props 。以便我们可以在第12行中使用This . props.actions.sendemail()来派发一个动作。
     connect和bindActionCreators来自 redux。 前者用于连接 store ，后者用于将 action creators 绑定到你的 props
     
-#### 13.什么是 React Router Dom 及其工作原理
+ 13.什么是 React Router Dom 及其工作原理
     react-router-dom是应用程序中路由的库。 React库中没有路由功能，需要单独安装react-router-dom。
     react-router-dom 提供两个路由器BrowserRouter和HashRoauter。前者  基于url的pathname段，后者基于hash段。
     
-##### react-router-dom 组件
-    BrowserRouter 和 HashRouter 是路由器。
-    Route 用于路由匹配。
-    Link 组件用于在应用程序中创建链接。 它将在HTML中渲染为锚标记。
-    NavLink是突出显示当前活动链接的特殊链接。
-    Switch 不是必需的，但在组合路由时很有用。
-    Redirect 用于强制路由重定向
+	 react-router-dom 组件
+	    BrowserRouter 和 HashRouter 是路由器。
+	    Route 用于路由匹配。
+	    Link 组件用于在应用程序中创建链接。 它将在HTML中渲染为锚标记。
+	    NavLink是突出显示当前活动链接的特殊链接。
+	    Switch 不是必需的，但在组合路由时很有用。
+	    Redirect 用于强制路由重定向
 
-#### 14.如何在重新加载页面时保留数据
+ 14.如何在重新加载页面时保留数据
     单页应用程序首先在DOM中加载index.html，然后在用户浏览页面时加载内容，或者从同一index.html中的后端API获取任何数据。
     如果通过点击浏览器中的重新加载按钮重新加载页面index.html，整个React应用程序将重新加载，我们将丢失应用程序的状态。 如何保留应用状态？
     每当重新加载应用程序时，我们使用浏览器localstorage来保存应用程序的状态。我们将整个存储数据保存在localstorage中，每当有页面刷新或重新加载时，我们从localstorage加载状态。
     
-#### 15.如何在React进行API调用
+ 15.如何在React进行API调用
     我们使用redux-thunk在React中调用API。因为reduce是纯函数，所以没有副作用，比如调用API。
     因此，我们必须使用redux-thunk从 action creators 那里进行 API 调用。Action creator 派发一个action，将来自API的数据放入action 的 payload 中。Reducers 接收我们在上面的redux循环中讨论的数据，其余的过程也是相同的。
 
     redux-thunk是一个中间件。一旦它被引入到项目中，每次派发一个action时，都会通过thunk传递。如果它是一个函数，它只是等待函数处理并返回响应。如果它不是一个函数，它只是正常处理。
 
 
-#### 16.react 中的引用如何生效？
+ 16.react 中的引用如何生效？
     在标签上写ref属性 
         属性就是一个 函数  （）=>{} 
         函数的参数就是当前的标签 （（tag）=》{ this.xx=tag }   this.xx=tag 意思就是说把tag这个标签 赋值给 一个this中的xx属性 ）
